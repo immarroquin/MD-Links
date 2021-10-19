@@ -7,7 +7,7 @@ const { mdlinks } = require('../src/mdlinks.js');
       expect(typeof mdlinks).toBe('function');
     });
 
-    it('deberia retornar array con href, text y path', () => {
+    it('deberia retornar href, text y path', () => {
       expect(mdlinks('src/mdprueba', { validate : false})).resolves.toEqual([
         [
           {
@@ -33,7 +33,7 @@ const { mdlinks } = require('../src/mdlinks.js');
       ]);
     });
 
-    it('deberia retornar array con href, text y path, status y statusCode', async () => {
+    it('deberia retornar href, text, path, status y statusCode', async () => {
       expect( await mdlinks('src/mdprueba', { validate : true})).toEqual([
   {
     href: 'https://es.wikipedia.org/wiki/Markdown',
