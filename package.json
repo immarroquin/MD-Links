@@ -2,10 +2,40 @@
   "name": "md-links",
   "version": "0.1.0",
   "dependencies": {
+    "axios": "^0.22.0",
     "cli": "^1.0.1",
-    "fs-extra": "^10.0.0"
+    "commander": "^8.2.0",
+    "fs-extra": "^10.0.0",
+    "test": "^0.6.0"
   },
   "bin": {
-    "mdlinks": "./src/cli.js"
-  }
+    "mdlinks": "src/cli.js"
+  },
+  "description": "* [1. Preámbulo](#1-preámbulo)\r * [2. Resumen del proyecto](#2-resumen-del-proyecto)\r * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)\r * [4. Consideraciones generales](#4-consideraciones-generales)\r * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)\r * [6. Entregables](#6-entregables)\r * [7. Hacker edition](#7-hacker-edition)\r * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)\r * [9. Checklist](#9-checklist)\r * [10. Achicando el problema](#10-achicando-el-problema)",
+  "main": "mdlinks.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "jest": "^27.2.5"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immarroquin/MD-Links.git"
+  },
+  "keywords": [
+    "MD",
+    "Links",
+    "Node.js",
+    "Javascript"
+  ],
+  "author": "Lorena Marroquin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/immarroquin/MD-Links/issues"
+  },
+  "homepage": "https://github.com/immarroquin/MD-Links#readme"
 }
