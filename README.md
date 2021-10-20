@@ -1,10 +1,13 @@
-# Markdown Links
+![welcome mdlinks library](./img/welcome-mdlinks.png)
+
+# Markdown Links  
+![Desarrollado por Lorena](./img/desarrollado-mdlinks.png)
 
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [3. Descripción de la libreria](#3-descripción-de-la-libreria)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Entregables](#6-entregables)
@@ -32,29 +35,34 @@ herramienta usando [Node.js](https://nodejs.org/), que lea y analice archivos
 en formato `Markdown`, para verificar los links que contengan y reportar
 algunas estadísticas.
 
-![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
 
 ## 2. Resumen del proyecto
 
-[Node.js](https://nodejs.org/es/) es un entorno de ejecución para JavaScript
-construido con el [motor de JavaScript V8 de Chrome](https://developers.google.com/v8/).
-Esto nos va a permitir ejecutar JavaScript en el entorno del sistema operativo,
-ya sea tu máquina o un servidor, lo cual nos abre las puertas para poder
-interactuar con el sistema en sí, archivos, redes, ...
+Este proyecto es una librería de Node.js que permite leer, analizar, extraer y generar estadísticas de los links de un archivo o directorio en formato .md
 
-En este proyecto nos alejamos un poco del navegador para construir un programa
-que se ejecute usando Node.js, donde aprenderemos sobre cómo interactuar con el
-sistema archivos, con el entorno (_proceso_, _env_, _stdin/stdout/stderr_), ...
+1. Realice un diagrama de flujo con la interfaz que debe llevar la CLI
+![Diagrama](./img/diagrama.png)
 
-En este proyecto crearás una herramienta de línea de comando (CLI) así como tu
-propia librería (o biblioteca - library) en JavaScript.
+2. JavaScript API 
+- Recibe una ruta absoluta o relativa al archivo o directorio y siempre que sea relativa la convertira en absoluta. 
+- Recibe validate que es un booleano que determina si se desea validar los links encontrados. 
 
-Diseñar tu propia librería es una experiencia fundamental para cualquier
-desarrollador porque que te obliga a pensar en la interfaz (API) de tus
-_módulos_ y cómo será usado por otros developers. Debes tener especial
-consideración en peculiaridades del lenguaje, convenciones y buenas prácticas.
+3. CLI (Command Line Interface)
 
-## 3. Objetivos de aprendizaje
+
+## 3. Descripción de la libreria
+La aplicación se ejecuta de la siguiente manera a través de la terminal:
+
+mdlinks <path-to-file> [options]
+
+Si ingresas una ruta valida sea archivo o directorio
+![path en false](./img/ruta-false.png)
+
+
+Si ingresas una ruta valida con la opción --validate
+![path en true](./img/ruta-true.png)
+
+
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 

@@ -69,7 +69,6 @@ const getLinks = (filePath) => {
         });
         getLink = links.next();
         getText = texts.next();
-        //console.log(arrLinks);
         resolve(arrLinks);
       }
     });
@@ -84,7 +83,6 @@ const validateLinks = (validLink) => {
         .then((res) => {
           link.status = "OK";
           link.statusCode = res.status;
-          //console.log(res, "soy estatus");
         })
         .catch((err) => {
           if (err.response) {
